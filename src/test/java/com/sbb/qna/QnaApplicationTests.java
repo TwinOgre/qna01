@@ -92,7 +92,7 @@ class QnaApplicationTests {
 		assertTrue(oq.isPresent());
 		Question q = oq.get();
 		answer.setContent("answerContent");
-		answer.setCreatedDate(LocalDateTime.now());
+		answer.setCreateDate(LocalDateTime.now());
 		answer.setQuestion(q);
 		this.answerRepository.save(answer);
 	}
